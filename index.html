@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory Game</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+	<!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      Memory_Game
+    </div>
+    <div class="game_content">
+      <div class="colors_place">
+        <div onclick="getColor(0)" class="color red"></div>
+        <div onclick="getColor(1)" class="color green"></div>
+        <div onclick="getColor(2)" class="color blue"></div>
+        <div onclick="getColor(3)" class="color yellow"></div>
+      </div>
+    </div>
+    <div class="commentContent">
+      <span class="commentText"></span>
+    </div>
+    <button type="button" name="button" onclick="startGame(); randomArray();" class="play_button">PLAY!</button>
+
+	<!-- Script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="functions/functions.js"></script>
+  </body>
+</html>
