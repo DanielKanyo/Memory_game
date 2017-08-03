@@ -24,9 +24,9 @@ body {
 
 .game_content {
   width: 100%;
-  height: 400px;
+  height: 280px;
   position: relative;
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
 }
 
 .colors_place {
@@ -35,48 +35,50 @@ body {
 }
 
 .color {
+  outline: none;
   width: 50%;
   height: 50%;
   float: left;
+  border: none;
 }
 
 .red {
-  transition: 0.3s;
-  background: #b6b6b6;
-  border-top-left-radius: 30px;
+  transition: 0.1s;
+  background: #ff9999;
+  border-top-left-radius: 15px;
 }
-.red:hover {
+.red:active {
   transition: 0.3s;
   background: red;
 }
 
 .green {
-  transition: 0.3s;
-  background: #909090;
-  border-top-right-radius: 30px;
+  transition: 0.1s;
+  background: #99ff99;
+  border-top-right-radius: 15px;
 }
-.green:hover {
+.green:active {
   transition: 0.3s;
   background: green;
 }
 
 .blue {
-  transition: 0.3s;
-  background: #5e5e5e;
-  border-bottom-left-radius: 30px;
+  transition: 0.1s;
+  background: #9999ff;
+  border-bottom-left-radius: 15px;
 }
-.blue:hover {
-  transition: 0.3s;
+.blue:active {
+  transition: 0.1s;
   background: blue;
 }
 
 .yellow {
-  transition: 0.3s;
-  background: #acacac;
-  border-bottom-right-radius: 30px;
+  transition: 0.1s;
+  background: #ffffb3;
+  border-bottom-right-radius: 15px;
 }
-.yellow:hover {
-  transition: 0.3s;
+.yellow:active {
+  transition: 0.1s;
   background: yellow;
 }
 
@@ -102,7 +104,7 @@ body {
   background: linear-gradient(to left, #e65245, #e43a15); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.play_button:hover {
+.play_button:active {
   cursor: pointer;
   background: #e43a15;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #d04437, #ca2b09);  /* Chrome 10-25, Safari 5.1-6 */
